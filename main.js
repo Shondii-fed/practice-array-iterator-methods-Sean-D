@@ -39,7 +39,7 @@ console.log(scores);
 // Task #1
 let cities = ["New York", "Chicago", "Miami", "Camarello", "Bridgeport"];
 let citiesUpper = cities.forEach(city => {
-    console.log(`One of my favorite cities is ${city}.`);
+    console.log(`One of my favorite cities is ${city.toUpperCase()}.`);
 // One of my favorite cities is New York.
 // One of my favorite cities is Chicago.
 // One of my favorite cities is Miami.
@@ -81,12 +81,12 @@ console.log(findFoodIndex);
 
 // Task #5
 let temperatures = [83, 82, 83, 85, 83];
-let highTempCheck = temperatures.some(temp => temp > 90);
-let lowTempCheck = temperatures.every(temp => temp < 50);
-console.log(highTempCheck);
+let someResult = temperatures.some(temp => temp > 90);
+let everyResult = temperatures.every(temp => temp > 50);
+console.log(someResult);
 // false
-console.log(lowTempCheck);
-// false
+console.log(everyResult);
+// true
 
 // Task #6
 let budget = 300;
